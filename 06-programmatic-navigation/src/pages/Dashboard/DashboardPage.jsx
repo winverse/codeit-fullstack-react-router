@@ -4,8 +4,6 @@ export function DashboardPage() {
   const navigate = useNavigate();
 
   function handleLogout() {
-    // useNavigate에 -1을 전달하면 "뒤로 가기"와 동일하게 동작합니다.
-    // 여기서는 로그아웃 후 홈으로 가는 것이 더 적절하므로, 홈 경로를 직접 지정합니다.
     navigate('/');
   }
 
