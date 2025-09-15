@@ -12,7 +12,8 @@ export function PostListPage() {
             <article key={post.id} className={styles.postCard}>
               <h3 className={styles.title}>{post.title}</h3>
               <div className={styles.meta}>
-                <span>{post.author}</span> · <time dateTime={post.date}>{post.date}</time>
+                <span>{post.author}</span> ·{' '}
+                <time dateTime={post.date}>{post.date}</time>
               </div>
               <p className={styles.excerpt}>{post.excerpt}</p>
               <Link className={styles.more} to={`/posts/${post.id}`}>

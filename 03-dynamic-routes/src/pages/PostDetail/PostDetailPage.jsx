@@ -1,9 +1,8 @@
 import { useParams, Link } from 'react-router';
 import styles from './PostDetail.module.css';
-import { posts } from '../../data/posts';
+import { posts } from '@/data/posts';
 
 export function PostDetailPage() {
-  // TODO: useParams 훅을 사용해 postId를 가져오세요.
   const postId = '1'; // 임시 값
   const post = posts.find((p) => p.id === postId);
 
@@ -15,14 +14,17 @@ export function PostDetailPage() {
             <header className={styles.postHeader}>
               <h2 className={styles.title}>{post.title}</h2>
               <div className={styles.meta}>
-                <span>{post.author}</span> · <time dateTime={post.date}>{post.date}</time>
+                <span>{post.author}</span> ·{' '}
+                <time dateTime={post.date}>{post.date}</time>
               </div>
             </header>
             <div className={styles.content}>{post.content}</div>
             {post.tags?.length ? (
               <ul className={styles.tags} aria-label="태그">
                 {post.tags.map((t) => (
-                  <li key={t} className={styles.tag}>#{t}</li>
+                  <li key={t} className={styles.tag}>
+                    #{t}
+                  </li>
                 ))}
               </ul>
             ) : null}
