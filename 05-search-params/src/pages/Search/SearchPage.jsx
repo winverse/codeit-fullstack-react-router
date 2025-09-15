@@ -46,10 +46,6 @@ export function SearchPage() {
       <hr />
 
       <h3>검색 결과</h3>
-      {/* TODO: query의 존재 여부와 filteredQuestions의 길이에 따라 다른 UI를 보여주세요. */}
-      {/* 1. query가 없을 때: <p>검색어를 입력해주세요.</p> */}
-      {/* 2. query가 있고 결과가 있을 때: 질문 목록(ul > li) */}
-      {/* 3. query가 있고 결과가 없을 때: <p>'{query}'에 대한 검색 결과가 없습니다.</p> */}
       <p>검색어를 입력해주세요.</p>
     </div>
   );
