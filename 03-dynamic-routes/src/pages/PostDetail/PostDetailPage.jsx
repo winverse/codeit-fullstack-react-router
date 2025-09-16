@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router';
+import { Link } from 'react-router';
 import styles from './PostDetail.module.css';
 import { posts } from '@/data/posts';
 
