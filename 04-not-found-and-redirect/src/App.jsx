@@ -1,7 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router';
 import { HomePage } from './pages/Home';
 import { ProfilePage } from './pages/Profile';
-import { NotFoundPage } from './pages/NotFound';
 
 export function App() {
   return (
