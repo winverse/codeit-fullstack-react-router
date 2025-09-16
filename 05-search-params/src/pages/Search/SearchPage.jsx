@@ -1,4 +1,3 @@
-import { useSearchParams } from 'react-router';
 import styles from './Search.module.css';
 
 const questions = [
@@ -12,13 +11,13 @@ export function SearchPage() {
   const query = null;
   const sort = null;
 
-  const filteredQuestions = [];
-
   const handleSubmit = (event) => {
-    e.preventDefault();
+    event.preventDefault();
   };
 
-  const handleClickButton = (sortType) => {};
+  const handleSort = (sortType) => {};
+
+  const filteredQuestions = [];
 
   return (
     <div className={styles.page}>
@@ -29,16 +28,10 @@ export function SearchPage() {
       </form>
 
       <div style={{ marginTop: '1rem' }}>
-        <button
-          onClick={() => handleClickButton('asc')}
-          disabled={sort === 'asc'}
-        >
+        <button onClick={() => handleSort('asc')} disabled={sort === 'asc'}>
           오름차순 정렬
         </button>
-        <button
-          onClick={() => handleClickButton('desc')}
-          disabled={sort === 'desc'}
-        >
+        <button onClick={() => handleSort('desc')} disabled={sort === 'desc'}>
           내림차순 정렬
         </button>
       </div>
