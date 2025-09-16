@@ -1,9 +1,7 @@
-import { useNavigate } from 'react-router';
-
 export function LoginPage() {
-  function handleLogin() {
+  const handleLogin = () => {
     alert('로그인 성공! 대시보드로 이동합니다.');
-  }
+  };
 
   return (
     <div className="container">
