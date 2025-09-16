@@ -1,4 +1,3 @@
-import { useSearchParams } from 'react-router';
 import styles from './Search.module.css';
 
 const questions = [
