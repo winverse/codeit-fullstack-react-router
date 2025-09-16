@@ -5,7 +5,10 @@ export function Layout() {
   return (
     <div className={styles.app}>
       <nav>
-        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
           홈
         </NavLink>
         <NavLink
