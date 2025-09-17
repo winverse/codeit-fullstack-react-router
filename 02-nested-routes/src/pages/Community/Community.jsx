@@ -6,9 +6,7 @@ export function CommunityPage() {
     <div className={styles.page}>
       <h2>커뮤니티</h2>
       <nav>
-        <NavLink to="/community" end>
-          글 목록
-        </NavLink>
+        <NavLink to="/community">글 목록</NavLink>
         <NavLink to="/community/new-post">글쓰기</NavLink>
       </nav>
       <hr />
