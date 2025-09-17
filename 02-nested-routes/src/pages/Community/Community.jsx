@@ -11,6 +11,8 @@ export function CommunityPage() {
         </NavLink>
         <NavLink to="/community/new-post">글쓰기</NavLink>
       </nav>
+      <hr />
+      <Outlet />
     </div>
   );
 }
